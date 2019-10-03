@@ -12,7 +12,7 @@ Some of the requirements includes external tools that are not part from this rep
 
 #### Redis
 Redis was used to store the transactions executed in order to limit the number of transactions per address, this to avoid getting out of balance rapidly.
-The installation guide can be found [here]([https://redis.io/topics/quickstart](https://redis.io/topics/quickstart))
+The installation guide can be found [here](https://redis.io/topics/quickstart)
 #### Nodejs
 Nodejs was used to build a functional API to serve as the backend of the web app with the NEM blockchain. This API basically make calls to the NEM API and returns the responses messages to the web app where these are managed. The following command will install nodejs in your machine.
 ```
