@@ -1,0 +1,56 @@
+body {
+    /* background-color: rgba(139, 132, 132, 0.527); */
+    background-image: url("back.jpg");
+  }
+
+  .title-container{
+    text-align: center;
+      padding-top: 8%;
+  }
+  #title {
+      font-size: 3vw;
+      text-align: center;
+      color: aliceblue;
+  }
+  .white-square-container{
+      text-align: center;
+      padding-top: 2%;
+  }
+  .white-square {
+    background-color: white;
+    width: 55%;
+    height:55%;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+#address{
+  position: absolute;
+  top: 35%;
+  /* border: none; */
+  left: 50%;
+  outline: 0;
+  width: 40%;
+  height: 8%;
+  font-size: 20px;
+  
+  
+}
+
+#logo{
+  position: absolute;
+  left: 4%;
+  top:13%;
+  width: 38%;
+  height: 80%;
+}
+#send{
+  position: absolute;
+  left: 60%;
+  width: 15%;
+  height: 8%;
+  font-size: 20px;
+  top: 50%;
+}
+
+

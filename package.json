@@ -1,0 +1,26 @@
+{
+  "name": "nem_faucet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardojmv85/Nem_Faucet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardojmv85/Nem_Faucet/issues"
+  },
+  "homepage": "https://github.com/ricardojmv85/Nem_Faucet#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nem-sdk": "^1.6.7",
+    "package-lock.json": "^1.0.0",
+    "redis": "^2.8.0"
+  }
+}
