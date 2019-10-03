@@ -2,9 +2,13 @@
 
 The following repository corresponds to the creation of a simple Faucet for XEM tokens from the NEM blockchain. The actual configuration of this project is sending 1 XEM token to an specific address. Requests can only be executed 1 per hour with the same address.
 
+
 ## Requirements
 
 Some of the requirements includes external tools that are not part from this repository. These tools were choosen to facilitate the usability of this NEM Demo, but you could implements different tools to solve the requirements of this Faucet.
+
+* NEM Wallet
+* Considerable amount of XEM's
 
 #### Redis
 Redis was used to store the transactions executed in order to limit the number of transactions per address, this to avoid getting out of balance rapidly.
