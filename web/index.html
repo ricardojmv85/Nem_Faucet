@@ -1,28 +1,46 @@
 <html>
-<head>
-    <title>
+    <head>
+        <title>
         Mazinger NEM Faucet
-    </title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="nemicon.png">
-    
-</head>
-<body>
-    <script type="text/javascript" src="js.js"></script>
-    <div class="title-container"> 
-        <div id="title">Welcome to Mazinger NEM Faucet</div>
-    </div>
-    <div class="white-square-container">
-        <div class="white-square">
-            <input id= "address" type="text" placeholder="Address">
-            <button id = "send" type="button" onclick="httpGet()">Send NEM's</button>
-            <img id="logo" src="nellogo.png">
-            
+        </title>
+        <link rel="icon" href="nemicon.png">
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="prueba.css">
+        <script src="js.js"></script>
+
+        <div class="container" id="titlecontainer">
+            <div class="row">
+                <div class="col-sm-12 text-center" id="faucetTitle">Welcome to Mazinger NEM Faucet</div>
+              </div>
         </div>
-</div>
+
+        <div class="container">
+                <div class="col-sm-12 text-center">
+                    <div class="container" id="white-square-container">
+                        <div class="white-square">
+                            <div class="container" id="container2">
+                                <img id="logo" src="nellogo.png" class="img-fluid">
+                                <form class="needs-validation">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" id="uname" placeholder="Address" id="address" required>
+                                      <div class="valid-feedback" id="validmessage"></div>
+                                      <div class="invalid-feedback" id="invalidmessage">Please fill out this field.</div><br>
+                                      <textarea name="message" rows="10" cols="30" id="uname" id="messe" placeholder="Message"></textarea>
+                                      
+                                    </div>    
+                                    <button type="button" class="btn btn-primary" onclick="transfer()" id="button">Send Nems</button>
+                                   
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
 
 
-
-
-</body>
+    </body>
 </html>

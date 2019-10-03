@@ -1,0 +1,86 @@
+body {
+    /* background-color: rgba(139, 132, 132, 0.527); */
+    background-image: url("back.jpg");
+    background-size: cover;
+ background-repeat: no-repeat;
+  }
+
+#faucetTitle{
+    font-size: 3vw;
+    color: aliceblue;
+}
+#titlecontainer{
+    padding-top: 10%;
+}
+#white-square-container{
+    padding-top:4%;
+}
+.white-square {
+    background-color: rgba(255, 255, 255, 0.294);
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+#logo{
+    left: 8%;
+    top:15%;
+    position: absolute;
+    width: 38%;
+    height: 70%;
+}
+
+#send{
+    position: absolute;
+    left: 60%;
+    width: 15%;
+    height: 8%;
+    font-size: 20px;
+    top: 50%;
+    color: black;
+    
+  }
+
+  #messe{
+    position: absolute;
+    left: 60%;
+    width: 15%;
+    height: 8%;
+    font-size: 20px;
+    top: 20%;
+    color: black;
+    
+  }
+ 
+  #container2{
+    width:100%;
+    height: 100%;
+  }
+
+ 
+
+  #address{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 40%;
+    height: 8%;
+    font-size: 100%;
+    
+  }
+
+  .needs-validation{
+      position: absolute;
+      left: 50%;
+      width: 40%;
+      top:35%;
+  }
+ #validmessage{
+     display: none;
+     
+ }
+ #invalidmessage{
+     font-size: 100%;
+     display: none;
+ }
