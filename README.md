@@ -24,7 +24,7 @@ The following command will install you the NEM SDK.
 ```
 npm install nem-sdk
 ``` 
-The full NEM SDK documentation could be found [here]([[https://www.npmjs.com/package/nem-sdk](https://www.npmjs.com/package/nem-sdk)])
+The full NEM SDK documentation could be found [here](https://www.npmjs.com/package/nem-sdk)
 
 #### Setup
 
