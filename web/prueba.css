@@ -42,16 +42,7 @@ body {
     
   }
 
-  #messe{
-    position: absolute;
-    left: 60%;
-    width: 15%;
-    height: 8%;
-    font-size: 20px;
-    top: 20%;
-    color: black;
-    
-  }
+ 
  
   #container2{
     width:100%;

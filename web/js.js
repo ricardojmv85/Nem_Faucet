@@ -15,7 +15,7 @@ function transfer()
             document.getElementById('validmessage').innerText="Successful transaction";
             document.getElementById('validmessage').style.display="inline";
             document.getElementById('uname').value = "";
-            document.getElementById('button').innerHTML='Send Nems';
+            document.getElementById('button').innerHTML="Send NEM's";
             });
             
         } 
@@ -28,19 +28,20 @@ function transfer()
             document.getElementById("invalidmessage").innerText="Invalid Adress"
             document.getElementById("invalidmessage").style.display="inline";
             document.getElementById('uname').value="";
-            document.getElementById('button').innerHTML='Send Nems';
+            document.getElementById('button').innerHTML="Send NEM's";
             });
         }
-        else if (response == 'wait'){
+        else if (response.substring(0,4) == 'wait'){
+            console.log(response.substring(0,4));
             // alert("The time lapsed between requests must be at leat 1 hour.")
             document.getElementById('button').innerHTML='<span class="spinner-border spinner-border-sm"></span>Loading.';
             sleep(1500).then(() => {
             document.getElementById('validmessage').style.display="none";
             document.getElementById('uname').style.borderColor="red";
-            document.getElementById("invalidmessage").innerText="Try at least 1 hour later."
+            document.getElementById("invalidmessage").innerText="Try again in "+response.substring(4,)+" minutes";
             document.getElementById("invalidmessage").style.display="inline";
             document.getElementById('uname').value="";
-            document.getElementById('button').innerHTML='Send Nems';
+            document.getElementById('button').innerHTML="Send NEM's";
             });
         }
         else{
@@ -54,7 +55,7 @@ function transfer()
         document.getElementById('uname').style.borderColor="red";
         document.getElementById("invalidmessage").innerText="Please fill out the field."
         document.getElementById("invalidmessage").style.display="inline";
-        document.getElementById('button').innerHTML='Send Nems';
+        document.getElementById('button').innerHTML="Send NEM's";
         });
     }
 

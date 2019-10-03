@@ -8,7 +8,7 @@ app.use(cors());
 var redis = require('redis');
 var redis_client = redis.createClient(); 
 var endpoint = nem.model.objects.create("endpoint")("http://hugetestalice.nem.ninja", 7890);
-var common = nem.model.objects.create("common")("passowrd", "privatekey");
+var common = nem.model.objects.create("common")("password", "privatekey");
 
 
 app.get('/transfer', (req, res)=>{
@@ -20,8 +20,9 @@ app.get('/transfer', (req, res)=>{
             console.log(error);
         }
         if(result!=null){
-            if((parseInt(result)+3600000) < Date.now()){
-                let transferTransaction = nem.model.objects.create("transferTransaction")(dest, 1, "From Mazinger to you");
+            time = parseInt(result)+3600000;
+            if(time< Date.now()){
+                let transferTransaction = nem.model.objects.create("transferTransaction")(dest, 1, "From Mazinger to you!");
                 let transactionEntity = nem.model.transactions.prepare("transferTransaction")(common, transferTransaction, nem.model.network.data.testnet.id);
 
                 nem.model.transactions.send(common, transactionEntity, endpoint).then(function(resi){
@@ -46,7 +47,9 @@ app.get('/transfer', (req, res)=>{
             }
             else{
                 console.log("no sea agarrado perro");
-                res.send({'response':'wait'});
+                der = parseInt((time-Date.now())/60000);
+                hay = 'wait'+der;
+                res.send({'response':hay});
             }
             
         }
