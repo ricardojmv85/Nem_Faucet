@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ricardojmv85/Nem_Faucet#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nem-sdk": "^1.6.7",
     "package-lock.json": "^1.0.0",
     "redis": "^2.8.0"
