@@ -19,7 +19,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nem-sdk": "^1.6.7",
+    "nem-sdk": "^1.6.11",
     "package-lock.json": "^1.0.0",
     "redis": "^2.8.0"
   }
